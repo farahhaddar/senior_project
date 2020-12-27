@@ -1,0 +1,530 @@
+/* @import url('https://fonts.googleapis.
+om/css2?family=Roboto&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Cinzel&display=swap');
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 ,
+.name{
+  /* font-family: 'Roboto', sans-serif; */
+  /* font-family: 'Rubik', sans-serif;
+  */
+  font-family: 'Cinzel', serif;
+} 
+html {
+  top:0px;
+  /* background-color: rgb(115, 164, 255); */
+  /* background: linear-gradient(0.25turn, #88B6D7 , #ffffff, #88B6D7);  */
+  background-color: rgba(255, 255, 255, 0.103);
+}
+
+.body {
+  z-index: 1;
+  margin:  auto;
+  margin-bottom: 0%;  
+  top:0px;
+  width: 80vw;
+  background-color: rgba(168, 175, 162, 0.042);
+  
+}
+
+/* nav bar  */
+#logo {
+  margin: 0.5%;
+  top: 0;
+  color: rgb(245, 250, 250);
+  font-family: "Averia Serif Libre";
+  font-size: medium;
+}
+#nav{
+  position: fixed;
+  z-index: 999;
+  width: 100%;
+}
+
+
+/* ------------------card---------------- */
+.can {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  width: 23%;
+  height: 20%;
+  background-color: rgb(253, 251, 251);
+  margin: 30px;
+  justify-content: space-between;
+}
+
+.card:hover {
+  box-shadow: 0 16px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+.container {
+  text-align: center;
+  color: black;
+}
+.con > h1 {
+  color: black;
+}
+
+/* slider  blogs desc*/
+
+* {
+  box-sizing: border-box;
+}
+/* Slideshow container */
+.slideshow-container {
+  /* max-width: 1300px; */
+
+  margin: auto;
+  text-align: center;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 2s;
+  animation-name: fade;
+  animation-duration: 2s;
+}
+
+@-webkit-keyframes fade {
+  from {
+    opacity: 0.8;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.7;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.text {
+  color: black;
+  font-style: italic;
+}
+
+pre {
+  font-style: italic;
+  background-color: rgb(95, 182, 78);
+  color: white;
+  font-size: 15px;
+  padding: 30px;
+  text-align: center;
+}
+
+/*! ____________________ Card ____________________*/
+
+.cardContainer {
+  justify-content: center;
+  box-shadow: inset 0px 0px 15px 0px rgba(238, 53, 104, 1);
+  border-radius: 50px;
+  margin: 10px 120px;
+  padding: 10px 10px;
+}
+
+.card {
+  width: 280px;
+  height: 340px;
+  border-radius: 20px;
+  border: 0;
+  padding: 1.5rem;
+  margin: 20px;
+  background: #fff;
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+  transition: 0.4s ease-out;
+  box-shadow: 0px 7px 10px rgba(0, 0, 0, 0.8);
+  overflow: hidden;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.card:hover:before {
+  opacity: 1;
+}
+
+.card:hover .info {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.card:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  border-radius: 15px;
+  background: rgba(0, 0, 0, 0.7);
+  z-index: 2;
+  transition: 0.5s;
+  opacity: 0;
+}
+
+.card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 20px;
+}
+
+.card .info {
+  position: relative;
+  z-index: 3;
+  color: #fff;
+  opacity: 0;
+  transform: translateY(30px);
+  transition: 0.5s;
+}
+
+.card .info h3 {
+  margin: 0;
+}
+
+.card .info p {
+  letter-spacing: 1px;
+  font-size: 15px;
+  margin-top: 8px;
+}
+
+.card .info button {
+  padding: 0px;
+  position: relative;
+  border: 2px solid #fff;
+  border-radius: 3px;
+  font-size: 15px;
+  font-family: sans-serif;
+  text-decoration: none;
+  color: #000;
+  letter-spacing: 2px;
+  text-align: center;
+  overflow: hidden;
+  z-index: 0;
+  padding: 7px;
+  transition: 0.7s;
+  font-weight: bold;
+}
+
+.card .info button:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 110%;
+  height: 110%;
+  opacity: 0;
+  background-color: #148840;
+  transition: all 0.7s;
+  transform: scale(0, 1.1);
+  transform-origin: center;
+  z-index: -1;
+  outline: none;
+}
+
+.card .info button:hover {
+  color: #fff;
+  border: 2px solid #d6d6d6;
+  transition-duration: 0.7s;
+  filter: blur(0);
+  transition-delay: 0.5s;
+}
+
+.card .info button:hover:before {
+  opacity: 1;
+  transform: scale(1.1, 1.1);
+  color: #fff;
+  transition-duration: 1s;
+  filter: blur(0);
+}
+
+button {
+  cursor: pointer;
+}
+
+button:focus {
+  outline: none;
+}
+
+.stars {
+  color: #ffffff;
+}
+.stars2 {
+  color: #e9d253;
+  text-align: center;
+  font-size: 70px;
+  padding:4px;
+}
+.stars3 {
+  color: #e9d253;
+  text-align: center;
+  font-size: 40px;
+  padding:8px;
+}
+
+footer {
+  width: 100%;
+}
+
+#home {
+  /* margin: 0; */
+  padding: 0;
+}
+.social {
+   font-size: 20px;
+   text-align:center;
+ 
+}
+.social i{
+ padding: 20px;
+}
+
+.end{
+  text-align:center;
+}
+
+.copy{
+  font-size: large;
+}
+#contform{
+ margin: 40px;
+ margin-top:0px;
+ padding-top:0px;
+ color: white;
+}
+
+#contform input[type=text],textarea {
+  width: 100%;
+  padding: 12px 20px;
+  /* margin: 8px 8px 0px,0px; */
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+.sub{
+  margin: 20px 80px 20px 450px;
+}
+/* Style the submit button */
+#contform input[type=submit] {
+  width: 50%;
+  background-color:rgb(255, 255, 255);
+  color: rgb(255, 5, 5);
+  padding: 14px 20px;
+  margin: 8px 4px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+#contform input[type=submit]:hover {
+  background-color: rgb(224, 28, 28);
+  color:white;
+}
+label{
+  font-weight: bold;
+  font-size: medium;
+}
+.c{
+  background-color: rgb(95, 182, 78);
+}
+
+#personl{
+ 
+  color:white;
+  font-size:25px;
+
+}
+#personl i{
+  padding: 4%;
+  
+}
+
+.w3-bar-item{
+  text-align: center;
+}
+.w3-bar-item button {
+ padding: 10px;
+ margin-right: 8%;
+
+}
+
+.name{
+  font-size: 50px;
+ 
+ 
+}
+
+.nc{
+  text-align: center;
+  padding-top: 50px;
+}
+
+.rate{
+  margin:40px;
+}
+
+
+.content{
+   margin: auto;
+  border: 2px solid rgb(24, 23, 23);
+  border-radius: 5px;
+  width: 1000px;
+  padding:4%;
+  margin-bottom: 5%;
+  box-shadow: -1px 0px 17px 4px rgba(72, 74, 77, 0.75);
+}
+
+.act{
+  margin-bottom: 50px;
+  margin-top: 50px;
+}
+ 
+table {
+  border-collapse: collapse;
+  width: 90%;
+  margin: auto;
+
+  
+}
+
+th, td {
+  text-align: center;
+  padding: 8px;
+  font-size: 18px;
+}
+
+tr:nth-child(even){background-color: #e7e3e3}
+
+th {
+  background-color: #67b632;
+  color: white;
+}
+
+.linkh a {
+ 
+  text-decoration: none;
+  color:rgb(0, 0, 0);
+  font-style:italic;
+ 
+}
+/* .regsf{
+
+} */
+
+div.scroll {  
+  width: 100%; 
+  overflow-x: auto; 
+  overflow-y: hidden; 
+  max-height:400px ;
+
+} 
+
+.scroll::-webkit-scrollbar {
+  width: 2px;               /* width of the entire scrollbar */
+  
+}
+
+.scroll::-webkit-scrollbar-track {
+  background: rgb(255, 255, 255);      /* color of the tracking area */
+}
+
+.scroll::-webkit-scrollbar-thumb {
+  width:1px;
+  background-color:rgb(97, 167, 60); /* color of the scroll thumb */
+
+}
+
+#contform1
+{
+ margin: auto;
+padding-left:300px;
+  
+ 
+ }
+ 
+ #contform1 input[type=text],textarea {
+   width: 60%;
+   padding: 12px 20px;
+   /* margin: 8px 8px 0px,0px; */
+   display: inline-block;
+   border: 1px solid #ccc;
+   border-radius: 4px;
+   box-sizing: border-box;
+ }
+ 
+ /* Style the submit button */
+ #contform1 input[type=submit] {
+   width: 40%;
+   background-color: #2bb13c;
+   color: white;
+   padding: 14px 20px;
+   margin: 10px 80px 40px 80px;
+   border: none;
+   border-radius: 4px;
+   cursor: pointer;
+   
+ }
+ #contform1 input[type=submit]:hover {
+   background-color: rgb(167, 52, 17);
+   color:white;
+ }
+ label{
+   font-weight: bold;
+   font-size: medium;
+ }
+ /* .c{
+   background-color: black;
+   padding-top: 0%;
+   margin-top: 0%;
+   color: white;
+ } */
+ 
+
+ div.areascroll { 
+  height: 950px; 
+  overflow-x: hidden; 
+  overflow-y: auto; 
+} 
+
+#contus{
+  margin-top: 60px;
+}
+
+.areascroll::-webkit-scrollbar {
+  width: 2px;/* width of the entire scrollbar */
+}
+.areascroll::-webkit-scrollbar-track {
+  border-radius: 10px;
+  background: rgb(57, 133, 22);      /* color of the tracking area */
+}
+
+.areascroll::-webkit-scrollbar-thumb {
+  background-color:rgb(255, 255, 255); /* color of the scroll thumb */
+}

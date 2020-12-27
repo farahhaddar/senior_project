@@ -1,0 +1,42 @@
+body{
+  background-color: rgba(93, 141, 148, 0.507); 
+  
+}
+h1{
+    color:white;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 60px;
+}
+.table-users{
+    width: 1000px;
+    height:850px;
+   background-color: white;
+    margin: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    
+  }
+  
+  th, td {
+    text-align: center;
+    padding: 16px;
+    
+  }
+  
+  tr:nth-child(even){background-color: rgb(204, 201, 197)}
+  
+ th{
+    background-color:rgb(230, 185, 192);
+    color: white;
+    text-align: center;
+    
+  }
+
+  .fa-file-excel{
+    cursor: pointer;
+
+  }

@@ -1,0 +1,108 @@
+body{ 
+    background-color:rgba(93, 141, 148, 0.507); 
+    margin-top: 0%;
+    width:100%;
+    
+
+}
+
+.con{
+    width:950px;
+    min-height: 950px;
+    margin: auto;
+    padding: 16px 20px 45px 10px;
+    background-color: rgb(255, 255, 255); 
+    
+}
+h1{
+ text-align: center;
+ color:white;
+}
+
+.succ{
+    color:green;
+    margin: auto;
+    font-weight: bold;
+}
+.fail{
+    color:rgb(199, 55, 30);
+    margin: auto;
+    font-weight: bold;
+}
+.err{
+    color:red;
+    font-style: italic;
+    font-size: 16px;
+}
+
+.colmn{
+    display:flex;
+    flex-wrap: wrap;
+}
+#imgg{
+    flex: 24%;
+    padding: 2px;
+
+    
+}
+
+
+input[type=text] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+
+  label{
+      font-weight:bold;
+      font-size:25px;
+  }
+
+   input.t{
+    box-sizing:border-box;
+    border: 1px solid rgb(0, 0, 0);
+    width:400px;
+  }
+
+  input[type=file]{
+      
+      font-size:20px;
+
+  }
+
+  input[type=submit] {
+    width:50%;
+    background-color:  #517272 ;
+    color: white;
+    padding: 14px 20px;
+    border: none;
+    border-radius: 35px;
+    cursor: pointer;
+    margin: 8px 0;
+    
+  }
+
+.btncenter{
+    text-align: center;
+}
+
+.linkh a {
+    text-decoration: none;
+    color:gray;
+    font-style:italic;
+}
+
+#imgg a{
+    text-decoration: none;
+    color:red;
+    font-size: 20px;
+}
+
+#imgg{
+    text-align: center; 
+}
+
