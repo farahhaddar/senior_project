@@ -400,7 +400,7 @@ endif;
     <input type="text" name="tel" required   placeholder="ex. 03123456"><br>
 
     <label > comments  :</label><span class="fail"><?php if (isset($_SESSION['txt'])) {echo $_SESSION['txt'];unset($_SESSION['txt']);}?></span><br>
-   <textarea name="comment" rows="12" cols="45"></textarea>
+   <textarea name="comment" rows="12" cols="45" class="txt-area"></textarea>
 
 
  <br>
@@ -409,18 +409,18 @@ endif;
    </form>
    </div>
    
+   
    <div id="personl" class="w3-center" >
 <i class="fas fa-map-marker-alt"></i> Beirut , Sodeco <br>
 <i class="fas fa-phone"></i> 01/112211<br>
 <i class="far fa-envelope"></i> youngAdventurers@gmail.com<br>
 </div>
 
-   </div>
-
 
    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d22288.961442494896!2d35.520916553225405!3d33.88799290540781!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x151f171cffad37cf%3A0x516785628d179cc!2sSodeco%20Square!5e0!3m2!1sen!2slb!4v1607967566159!5m2!1sen!2slb&output=embaded" width="100%" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
 
-   
+</div>
+   </div>
  <footer style="margin-top:0px;" class=" w3-red   w3-padding-16">
 
   <div class="social">

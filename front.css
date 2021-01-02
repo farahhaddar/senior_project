@@ -528,3 +528,8 @@ padding-left:300px;
 .areascroll::-webkit-scrollbar-thumb {
   background-color:rgb(255, 255, 255); /* color of the scroll thumb */
 }
+
+.txt-area {
+  width: 100%;
+  resize: none;
+}
